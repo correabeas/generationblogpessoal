@@ -92,4 +92,15 @@ public class Usuario {
 		this.postagem = postagem;
 	}
 
+	public Usuario(Long id, String nome,String senha, String usuario,String foto) {
+		this.id = id;
+		this.nome = nome;
+		this.senha = senha;
+		this.usuario = usuario;
+		this.foto = foto;
+	}
+
+	public Usuario() {
+	}
+
 }
