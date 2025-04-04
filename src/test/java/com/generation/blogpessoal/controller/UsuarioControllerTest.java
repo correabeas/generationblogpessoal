@@ -49,7 +49,7 @@ public class UsuarioControllerTest {
 				new Usuario(null, "Bia", "bia@email.com","cocacola", "-" ));
 		
 		ResponseEntity<Usuario> corpoResposta = testRestTemplate.exchange(
-				"/usuario/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
+				"/usuarios/cadastrar", HttpMethod.POST, corpoRequisicao, Usuario.class);
 		
 		assertEquals(HttpStatus.CREATED, corpoResposta.getStatusCode());
 	}
